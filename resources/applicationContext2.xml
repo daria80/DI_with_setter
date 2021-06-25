@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="myCarFerrari" class="spring_introduction_2.Ferarri"></bean>
+    <bean id="myCarZhiguli" class="spring_introduction_2.Zhiguli"></bean>
+    <bean id="meDriver" class="spring_introduction_2.Driver"><property name="car" ref="myCarFerrari"/></bean>
+</beans>

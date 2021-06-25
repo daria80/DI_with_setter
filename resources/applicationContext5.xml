@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="myGirl" class="spring_introduction_5.Girl"></bean>
+    <bean id="myBoy" class="spring_introduction_5.Boy"></bean>
+    <bean id="hospital" class="spring_introduction_5.Hospital"><constructor-arg ref="myGirl"/></bean>
+
+</beans>

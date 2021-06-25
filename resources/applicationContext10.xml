@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="dollar" class="spring_introduction_10.Dollar"></bean>
+    <bean id="ruble" class="spring_introduction_10.Ruble"></bean>
+    <bean id="atm" class="spring_introduction_10.ATM"><constructor-arg ref="ruble"/></bean>
+
+</beans>

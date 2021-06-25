@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="bath" class="spring_introduction_7.Bath"></bean>
+    <bean id="kitchen" class="spring_introduction_7.Kitchen"></bean>
+    <bean id="apartment" class="spring_introduction_7.Apartment"><constructor-arg ref="kitchen"></constructor-arg></bean>
+
+</beans>

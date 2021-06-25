@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="english" class="spring_introduction_9.English"></bean>
+    <bean id="russian" class="spring_introduction_9.Russian"></bean>
+    <bean id="translator" class="spring_introduction_9.Translator"><constructor-arg ref="russian"/></bean>
+</beans>
