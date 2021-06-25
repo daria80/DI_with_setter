@@ -4,7 +4,12 @@ public class Apartment {
 
     private Room room;
 
-    public Apartment(Room room) {
+    public Apartment() {
+        System.out.println("Appartment is created");
+    }
+
+    public void setRoom(Room room) {
+        System.out.println("Apartment class: set room");
         this.room = room;
     }
 
