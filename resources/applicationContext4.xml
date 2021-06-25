@@ -6,6 +6,7 @@
 
     <bean id="myCola" class="spring_introduction_4.Cola"></bean>
     <bean id="myMilk" class="spring_introduction_4.Milk"></bean>
-    <bean id="Mama" class="spring_introduction_4.Mama"><constructor-arg ref="myMilk"/></bean>
+    <bean id="Mama" class="spring_introduction_4.Mama"><property name="jar" ref="myCola"/></bean>
+
 
 </beans>

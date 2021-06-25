@@ -4,7 +4,12 @@ public class Mama {
 
     private Jar jar;
 
-    public Mama(Jar jar) {
+    public Mama() {
+        System.out.println("Mama bean is created");
+    }
+
+    public void setJar(Jar jar) {
+        System.out.println("Mama class: set jar");
         this.jar = jar;
     }
 
