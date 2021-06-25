@@ -11,5 +11,7 @@ public class Test {
         Mama mama = context.getBean("Mama",Mama.class);
 
         mama.pourDrink();
+
+        context.close();
     }
 }

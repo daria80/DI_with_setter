@@ -9,5 +9,6 @@ public class Test {
         GardenBed gardenBed1 = context.getBean("gardenBed", GardenBed.class);
         gardenBed1.sowedInTheGarden();
 
+        context.close();
     }
 }

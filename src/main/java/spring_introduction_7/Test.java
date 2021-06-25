@@ -9,5 +9,7 @@ public class Test {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext7.xml");
         Apartment apartment = context.getBean("apartment", Apartment.class);
         apartment.isHad();
+
+        context.close();
     }
 }
