@@ -6,9 +6,14 @@ public class Test {
 
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext5.xml");
-        Hospital hospital = context.getBean("hospital", Hospital.class);
+        Child child = new Boy();
+        Hospital hospital = new Hospital();
+        hospital.setChild(child);
         hospital.giveBirth();
+
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext5.xml");
+        Hospital hospital1 = context.getBean("hospital", Hospital.class);
+        hospital1.giveBirth();
 
         context.close();
     }
