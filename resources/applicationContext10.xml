@@ -6,6 +6,6 @@
 
     <bean id="dollar" class="spring_introduction_10.Dollar"></bean>
     <bean id="ruble" class="spring_introduction_10.Ruble"></bean>
-    <bean id="atm" class="spring_introduction_10.ATM"><constructor-arg ref="ruble"/></bean>
+    <bean id="atm" class="spring_introduction_10.ATM"><property name="banknote" ref="dollar"/></bean>
 
 </beans>

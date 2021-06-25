@@ -4,7 +4,12 @@ public class ATM {
 
     private Banknote banknote;
 
-    public ATM(Banknote banknote) {
+    public ATM() {
+        System.out.println("ATM is created");
+    }
+
+    public void setBanknote(Banknote banknote) {
+        System.out.println("ATM class: set banknote");
         this.banknote = banknote;
     }
 
