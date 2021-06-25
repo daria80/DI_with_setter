@@ -6,6 +6,6 @@
 
     <bean id="beet" class="spring_introduction_8.Beet"></bean>
     <bean id="cabbage" class="spring_introduction_8.Cabbage"></bean>
-    <bean id="gardenBed" class="spring_introduction_8.GardenBed"><constructor-arg ref="cabbage"></constructor-arg></bean>
+    <bean id="gardenBed" class="spring_introduction_8.GardenBed"><property name="vegetable" ref="cabbage"/></bean>
 
 </beans>

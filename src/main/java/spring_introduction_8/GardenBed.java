@@ -4,7 +4,12 @@ public class GardenBed {
 
     private Vegetable vegetable;
 
-    public GardenBed(Vegetable vegetable) {
+    public GardenBed() {
+        System.out.println("GardenBed is created");
+    }
+
+    public void setVegetable(Vegetable vegetable) {
+        System.out.println("GardenBed class: set vegetable");
         this.vegetable = vegetable;
     }
 
