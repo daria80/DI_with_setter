@@ -6,6 +6,6 @@
 
     <bean id="text" class="spring_introduction_6.Text"></bean>
     <bean id="picture" class="spring_introduction_6.Picture"></bean>
-    <bean id="application" class="spring_introduction_6.Application"><constructor-arg ref="picture"/></bean>
+    <bean id="application" class="spring_introduction_6.Application"><property name="message" ref="picture"/></bean>
 
 </beans>

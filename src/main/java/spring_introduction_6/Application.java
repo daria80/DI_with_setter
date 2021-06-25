@@ -4,7 +4,12 @@ public class Application {
 
     private Message message;
 
-    public Application(Message message) {
+    public Application() {
+        System.out.println("Application is created");
+    }
+
+    public void setMessage(Message message) {
+        System.out.println("Application class: set message");
         this.message = message;
     }
 
