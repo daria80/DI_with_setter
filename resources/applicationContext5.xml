@@ -6,6 +6,6 @@
 
     <bean id="myGirl" class="spring_introduction_5.Girl"></bean>
     <bean id="myBoy" class="spring_introduction_5.Boy"></bean>
-    <bean id="hospital" class="spring_introduction_5.Hospital"><constructor-arg ref="myGirl"/></bean>
+    <bean id="hospital" class="spring_introduction_5.Hospital"><property name="child" ref="myGirl"/></bean>
 
 </beans>
