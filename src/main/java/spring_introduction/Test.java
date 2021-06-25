@@ -7,7 +7,9 @@ public class Test {
 
 
 //        Pet pet = new Cat();
-//        Person person = new Person(pet);
+//        Person person = new Person();
+//        person.setPet(pet);
+//        person.callYourPet();
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
