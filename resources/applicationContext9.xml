@@ -6,5 +6,5 @@
 
     <bean id="english" class="spring_introduction_9.English"></bean>
     <bean id="russian" class="spring_introduction_9.Russian"></bean>
-    <bean id="translator" class="spring_introduction_9.Translator"><constructor-arg ref="russian"/></bean>
+    <bean id="translator" class="spring_introduction_9.Translator"><property name="language" ref="russian"/></bean>
 </beans>
